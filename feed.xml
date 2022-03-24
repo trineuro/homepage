@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Trineurotec</title>
+    <description></description>
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>제품 1</title>
+        <description>Product 1 description</description>
+        <pubDate>Thu, 20 Oct 2016 00:00:00 +0900</pubDate>
+        <link>/posts/product1-ko</link>
+        <guid isPermaLink="true">/posts/product1-ko</guid>
+      </item>
+    
+      <item>
+        <title>Product 1</title>
+        <description>Product 1 description</description>
+        <pubDate>Thu, 20 Oct 2016 00:00:00 +0900</pubDate>
+        <link>/posts/product1</link>
+        <guid isPermaLink="true">/posts/product1</guid>
+      </item>
+    
+      <item>
+        <title>제품 2</title>
+        <description>Product 2 description</description>
+        <pubDate>Wed, 19 Oct 2016 00:00:00 +0900</pubDate>
+        <link>/posts/product2-ko</link>
+        <guid isPermaLink="true">/posts/product2-ko</guid>
+      </item>
+    
+      <item>
+        <title>Product 2</title>
+        <description>Product 2 description</description>
+        <pubDate>Wed, 19 Oct 2016 00:00:00 +0900</pubDate>
+        <link>/posts/product2</link>
+        <guid isPermaLink="true">/posts/product2</guid>
+      </item>
+    
+      <item>
+        <title>제품 3</title>
+        <description>Product 3 description</description>
+        <pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate>
+        <link>/posts/product3-ko</link>
+        <guid isPermaLink="true">/posts/product3-ko</guid>
+      </item>
+    
+      <item>
+        <title>Product 3</title>
+        <description>Product 3 description</description>
+        <pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate>
+        <link>/posts/product3</link>
+        <guid isPermaLink="true">/posts/product3</guid>
+      </item>
+    
+      <item>
+        <title>우리 회사의 목표</title>
+        <description>We want to give hope to children with ADHD through relieving their stress and pain, including their families’. We aim to make South Korea the number one medical healthcare-providing country.</description>
+        <pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate>
+        <link>/posts/ourvision-ko</link>
+        <guid isPermaLink="true">/posts/ourvision-ko</guid>
+      </item>
+    
+      <item>
+        <title>Our Vision</title>
+        <description>We want to give hope to children with ADHD through relieving their stress and pain, including their families’. We aim to make South Korea the number one medical healthcare-providing country.</description>
+        <pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate>
+        <link>/posts/ourvision</link>
+        <guid isPermaLink="true">/posts/ourvision</guid>
+      </item>
+    
+      <item>
+        <title>질병</title>
+        <description>Attention Deficit Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder which has three core symptoms: inattention, hyperactivity and impulsivity. According to adhd-institute.com there are between 5.29% - 7.1% of children and adolescents suffer from ADHD and there is a higher prevalence in males than females.</description>
+        <pubDate>Mon, 17 Oct 2016 00:00:00 +0900</pubDate>
+        <link>/posts/disorders-ko</link>
+        <guid isPermaLink="true">/posts/disorders-ko</guid>
+      </item>
+    
+      <item>
+        <title>Disorders</title>
+        <description>Attention Deficit Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder which has three core symptoms: inattention, hyperactivity and impulsivity. According to adhd-institute.com there are between 5.29% - 7.1% of children and adolescents suffer from ADHD and there is a higher prevalence in males than females.</description>
+        <pubDate>Mon, 17 Oct 2016 00:00:00 +0900</pubDate>
+        <link>/posts/disorders</link>
+        <guid isPermaLink="true">/posts/disorders</guid>
+      </item>
+    
+  </channel>
+</rss>
