@@ -2,6 +2,7 @@
 {
     display:block;
     padding:0 15px;
+    white-space: pre;
 }
 
 .header-nav ul li
