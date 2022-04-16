@@ -108,7 +108,7 @@
       function successPapers(data) {
           var allRows = data.split(/\r?\n|\r/);
           for (var singleRow = 0; singleRow < allRows.length - 1; singleRow++) {
-                var rowCells = allRows[singleRow].split('|');
+                var rowCells = allRows[singleRow].split('\t');
                 var post = '<li class="article-list-item">';
                 post += '<a href="asdf" title="asdf">';
                 post += '<h5>';
@@ -135,7 +135,7 @@
       function successPatents(data) {
           var allRows = data.split(/\r?\n|\r/);
           for (var singleRow = 0; singleRow < allRows.length - 1; singleRow++) {
-                var rowCells = allRows[singleRow].split('|');
+                var rowCells = allRows[singleRow].split('\t');
                 var post = '<tr>';
                 post += '<td>';
                 post += singleRow + 1;
