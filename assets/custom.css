@@ -265,7 +265,6 @@ img {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  white-space: pre;
 }
 .table > thead > tr > th {
   font-weight: 400;
@@ -280,7 +279,6 @@ img {
 .table > colgroup + thead > tr:first-child > td,
 .table > thead:first-child > tr:first-child > td {
   border-top: 0;
-  white-space: pre;
 }
 .table > tbody + tbody {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
