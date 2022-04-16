@@ -272,6 +272,7 @@ img {
   color: #757575;
   vertical-align: bottom;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.12);
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
