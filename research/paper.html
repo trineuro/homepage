@@ -76,6 +76,21 @@
             <ul class="article-list">
             </ul>
             <h1>Patents</h1>
+            <div class="table-responsive-vertical shadow-z-1">
+               <h3>특허등록</h3>
+               <table id="table" class="table table-mc-light-blue">
+                    <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>내용</th>
+                        <th>출원번호</th>
+                        <th>등록번호</th>
+                      </tr>
+                    </thead>
+                    <tbody id="patent-tbody">
+                    </tbody>
+               </table>
+            </div>
         </article>
 
         <!--
@@ -414,11 +429,11 @@
       $.ajax({
         url: '../contents/papers.csv',
         dataType: 'text',
-        }).done(successFunction);
+        }).done(successPapers);
 
-      function successFunction(data) {
+      function successPapers(data) {
           var allRows = data.split(/\r?\n|\r/);
-          for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
+          for (var singleRow = 0; singleRow < allRows.length - 1; singleRow++) {
             var rowCells = allRows[singleRow].split('|');
             var post = '<li class="article-list-item">';
             post += '<a href="asdf" title="asdf">';
@@ -437,6 +452,33 @@
             $(".article-list").append(post);
         }
      }
+
+      $.ajax({
+        url: '../contents/patents.csv',
+        dataType: 'text',
+     }).done(successPatents);
+
+
+      function successPatents(data) {
+          var allRows = data.split(/\r?\n|\r/);
+          for (var singleRow = 0; singleRow < allRows.length - 1; singleRow++) {
+            var rowCells = allRows[singleRow].split('|');
+            var post = '<tr>';
+            post += '<td>';
+            post += singleRow + 1;
+            post += '</td>';
+            post += '<td>';
+            post += rowCells[0];
+            post += '</td>';
+            post += '<td>';
+            post += rowCells[1];
+            post += '</td>';
+            post += '<td>';
+            post += rowCells[2];
+            post += '</td>';
+          }
+      }
+
   </script>
   <script src="/assets/vendor.js"></script>
 </body>
