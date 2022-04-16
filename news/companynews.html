@@ -75,9 +75,8 @@
             </li>
           </ul>
         </nav>
-        
+        <h1>회사소식</h1> 
         <ul class="article-list">
-          
         </ul>
         <footer class="footer ">
           <p>
@@ -87,6 +86,27 @@
       </div>
     </div>
   </main>
+  <script>
+      $.ajax({
+        url: '../contents/news.csv',
+        dataType: 'text',
+        }).done(successPapers);
+
+      function successPapers(data) {
+          var allRows = data.split(/\r?\n|\r/);
+          for (var singleRow = 0; singleRow < allRows.length - 1; singleRow++) {
+                var rowCells = allRows[singleRow].split('\t');
+                var post = '<li class="article-list-item">';
+                post += '<h5>';
+                post += rowCells[0];
+                post += '</h5>';
+                post += '<p>';
+                post += rowCells[1];
+                post += '</p></li>';
+                $(".article-list").append(post);
+        }
+     }
+    </script>
   <script src="/assets/vendor.js"></script>
 </body>
 </html>
