@@ -407,7 +407,7 @@
   </main>
   <script>
       $.ajax({
-        url: 'csv_data.csv',
+        url: '../contents/papers.csv',
         dataType: 'text',
         }).done(successFunction);
 
@@ -423,7 +423,12 @@
             post += '<p style="font-size: 12px;">';
             post += rowCells[1];
             post += '</p>';
-            post += '<div class="article-list-footer"></div>';
+            post += '<p>';
+            post += rowCells[2];
+            post += '</p>';
+            post += '<div class="article-list-footer"><span class="article-list-date">';
+            post += rowCells[3];
+            post += '</span></div>';
             $(".article-list").append(post);
         }
      }
