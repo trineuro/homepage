@@ -87,7 +87,7 @@
                         <th>등록번호</th>
                       </tr>
                     </thead>
-                    <tbody id="patent-tbody">
+                    <tbody class="patent-tbody">
                     </tbody>
                </table>
             </div>
@@ -434,22 +434,22 @@
       function successPapers(data) {
           var allRows = data.split(/\r?\n|\r/);
           for (var singleRow = 0; singleRow < allRows.length - 1; singleRow++) {
-            var rowCells = allRows[singleRow].split('|');
-            var post = '<li class="article-list-item">';
-            post += '<a href="asdf" title="asdf">';
-            post += '<h5>';
-            post += rowCells[0];
-            post += '</h5></a>';
-            post += '<p style="font-size: 12px;">';
-            post += rowCells[1];
-            post += '</p>';
-            post += '<p>';
-            post += rowCells[2];
-            post += '</p>';
-            post += '<div class="article-list-footer"><span class="article-list-date">';
-            post += rowCells[3];
-            post += '</span></div>';
-            $(".article-list").append(post);
+                var rowCells = allRows[singleRow].split('|');
+                var post = '<li class="article-list-item">';
+                post += '<a href="asdf" title="asdf">';
+                post += '<h5>';
+                post += rowCells[0];
+                post += '</h5></a>';
+                post += '<p style="font-size: 12px;">';
+                post += rowCells[1];
+                post += '</p>';
+                post += '<p>';
+                post += rowCells[2];
+                post += '</p>';
+                post += '<div class="article-list-footer"><span class="article-list-date">';
+                post += rowCells[3];
+                post += '</span></div>';
+                $(".article-list").append(post);
         }
      }
 
@@ -458,24 +458,24 @@
         dataType: 'text',
      }).done(successPatents);
 
-
       function successPatents(data) {
           var allRows = data.split(/\r?\n|\r/);
           for (var singleRow = 0; singleRow < allRows.length - 1; singleRow++) {
-            var rowCells = allRows[singleRow].split('|');
-            var post = '<tr>';
-            post += '<td>';
-            post += singleRow + 1;
-            post += '</td>';
-            post += '<td>';
-            post += rowCells[0];
-            post += '</td>';
-            post += '<td>';
-            post += rowCells[1];
-            post += '</td>';
-            post += '<td>';
-            post += rowCells[2];
-            post += '</td>';
+                var rowCells = allRows[singleRow].split('|');
+                var post = '<tr>';
+                post += '<td>';
+                post += singleRow + 1;
+                post += '</td>';
+                post += '<td>';
+                post += rowCells[0];
+                post += '</td>';
+                post += '<td>';
+                post += rowCells[1];
+                post += '</td>';
+                post += '<td>';
+                post += rowCells[2];
+                post += '</td>';
+                $(".patent-tbody").append(post);
           }
       }
 
