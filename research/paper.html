@@ -70,7 +70,8 @@
             </li>
           </ul>
         </nav>
-        <div id="article" />
+        <ul id="article-list">
+        </ul>
 
         <!--
         <ul class="article-list">
@@ -423,7 +424,7 @@
             post += rowCells[1];
             post += '</p>';
             post += '<div class="article-list-footer"></div>';
-            $('#article').append(post);
+            $(".article-list").append(post);
         }
      }
   </script>
