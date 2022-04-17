@@ -100,7 +100,11 @@
                 post += '</h5>';
                 post += '<p>';
                 post += rowCells[1];
-                post += '</p></li>';
+                post += '</p>';
+                post += '<img src="../contents/images/';
+                post += rowCells[2].split(",")[0];
+                post += '">';
+                post += '</li>';
                 $(".article-list").append(post);
         }
      }
