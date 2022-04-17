@@ -95,13 +95,20 @@
           var allRows = data.split(/\r?\n|\r/);
           for (var singleRow = 0; singleRow < allRows.length - 1; singleRow++) {
                 var rowCells = allRows[singleRow].split('\t');
+                var images = rowCells[2].split(",");
                 var post = '<li class="article-list-item">';
                 post += '<h5>';
                 post += rowCells[0];
                 post += '</h5>';
                 post += '<p>';
                 post += rowCells[1];
-                post += '</p></li>';
+                post += '</p>';
+                for (var singleImg = 0; singleImg < images.length; singleImg++) {
+                    post += '<img src="../contents/images/';
+                    post += images[singleImg];
+                    post += '">';
+                }
+                post += '</li>';
                 $(".article-list").append(post);
         }
      }
