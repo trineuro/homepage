@@ -28,14 +28,3 @@ news (회사소식)
 
 contact (Contact us)
 - contact.html (contact)
-
-
-## 컨텐츠 업데이트 방법 
-
-총 4가지 컨텐츠를 수정할 수 있습니다. 
-1. 논문 (http://trineuro.com/research/paper.html 상단 논문 제목, 내용, 학회 정보) 
-2. 특허 (http://trineuro.com/research/paper.html 하단 특허명, 출원번호, PCT 출원번호) 
-3. 회사소식 (http://trineuro.com/news/companynews.html)
-4. 홍보 (http://trineuro.com/news/publicrelations.html)
-
-
